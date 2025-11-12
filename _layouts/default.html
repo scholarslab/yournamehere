@@ -5,9 +5,9 @@
 <title>{{ site.title }}</title>
 <link rel="stylesheet" href="{{ "/css/style.css" | relative_url }}">
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
 <script
   src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
   integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
@@ -16,11 +16,13 @@
 <!-- first include tsParticles engine -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
 
-<!-- then include any tsParticles plugin needed -->
+<!-- first include any tsParticles plugin needed -->
 <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
 
 <!-- then include jquery wrapper -->
-<script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script><body class="{{ page.title | slugify }}">
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/jquery"></script>
+
+<body class="{{ page.title | slugify }}">
 
 <header id="banner" role="banner">
     <h1><a href="{{ "/" | relative_url }}"><span class="bracket" aria-hidden="true">{</span><span id="title">{{ site.title }}</span><span class="bracket" aria-hidden="true">}</span></a></h1>
